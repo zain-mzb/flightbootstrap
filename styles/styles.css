@@ -1,0 +1,511 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+h4 {
+  display: inline;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("../images/plane2.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-dark {
+  background-color: #59bfff;
+  font-size: 1.2rem;
+}
+.jumbotron {
+  background: none;
+}
+
+h1 {
+  margin-top: 120px;
+  color: white;
+  font-size: 4rem;
+  padding-right: 400px;
+}
+
+.lead {
+  color: whitesmoke;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+nav a {
+  margin-left: 20px;
+}
+
+.logoimg {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  margin-top: 10px;
+}
+
+#ch1 {
+  font-size: 52px;
+  text-transform: uppercase;
+  color: #06a94d;
+  font-weight: 400;
+  padding-right: 0;
+}
+
+.cbg {
+  background-color: #a0e989;
+}
+
+.clogo {
+  margin-left: 10px;
+}
+
+#ch {
+  font-family: "Lato", sans-serif;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  color: #989898;
+  text-align: center;
+}
+
+.section {
+  position: relative;
+  height: 100vh;
+  margin-left: 100px;
+}
+
+.section .section-center {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#booking {
+  font-family: "Lato", sans-serif;
+  background-size: cover;
+  background-position: center;
+  color: #191a1e;
+  margin-top: -40px;
+  margin-bottom: -100px;
+  background-color: #87cefa;
+  margin-left: 0;
+}
+
+.booking-form {
+  position: relative;
+  background: #fff;
+  max-width: 642px;
+  width: 100%;
+  margin: auto;
+  padding: 45px 25px 25px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.booking-form .form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.booking-form .form-control {
+  background-color: #fff;
+  height: 65px;
+  padding: 0px 15px;
+  padding-top: 24px;
+  color: #191a1e;
+  border: 2px solid #dfe5e9;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 4px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.booking-form .form-control::-webkit-input-placeholder {
+  color: #dfe5e9;
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+  color: #dfe5e9;
+}
+
+.booking-form .form-control::placeholder {
+  color: #dfe5e9;
+}
+
+.booking-form .form-control:focus {
+  background: #f9fafb;
+}
+
+.booking-form input[type="date"].form-control:invalid {
+  color: #dfe5e9;
+}
+
+.booking-form select.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.booking-form select.form-control + .select-arrow {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  width: 32px;
+  line-height: 32px;
+  height: 32px;
+  text-align: center;
+  pointer-events: none;
+  color: #dfe5e9;
+  font-size: 14px;
+}
+
+.booking-form select.form-control + .select-arrow:after {
+  content: "\279C";
+  display: block;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.booking-form .form-label {
+  position: absolute;
+  top: 6px;
+  left: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 24px;
+  height: 24px;
+  font-size: 12px;
+  color: #4fa3e3;
+}
+
+.booking-form .form-checkbox input {
+  position: absolute !important;
+  margin-left: -9999px !important;
+  visibility: hidden !important;
+}
+
+.booking-form .form-checkbox label {
+  position: relative;
+  padding-top: 4px;
+  padding-left: 30px;
+  font-weight: 700;
+  color: #191a1e;
+}
+
+.booking-form .form-checkbox label + label {
+  margin-left: 15px;
+}
+
+.booking-form .form-checkbox input + span {
+  position: absolute;
+  left: 2px;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 2px solid #dfe5e9;
+  border-radius: 50%;
+}
+
+.booking-form .form-checkbox input + span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background-color: #4fa3e3;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.booking-form .form-checkbox input:not(:checked) + span:after {
+  opacity: 0;
+}
+
+.booking-form .form-checkbox input:checked + span:after {
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+}
+
+.booking-form .submit-btn {
+  color: #fff;
+  background-color: #4fa3e3;
+  font-weight: 400;
+  height: 65px;
+  font-size: 18px;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.booking-cta h1 {
+  font-size: 52px;
+  text-transform: uppercase;
+  color: #4fa3e3;
+  font-weight: 400;
+  padding-right: 0;
+}
+
+.booking-cta p {
+  font-size: 22px;
+  color: #191a1e;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .footer_main {
+    padding: 0px 0px 50px 0px;
+  }
+}
+
+.footer-right p,
+.footer_middle p {
+  font-family: montserrat;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+ul.footer_list {
+  list-style: none;
+  padding-left: 0px;
+}
+ul.footer_list li {
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+ul.footer_list li.phone {
+  font-size: 22px;
+  color: rgba(0, 0, 0, 1);
+}
+
+ul.footer_list li a {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  text-transform: none;
+}
+ul.footer_list a:hover {
+  color: rgba(54, 204, 142, 1);
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer_middle h4,
+.footer-right h4 {
+  font-family: montserrat;
+  font-size: 24px;
+}
+
+.footer_middle {
+  text-align: center;
+  padding: 0;
+}
+
+.footer-right h4,
+.footer-left h4 {
+  font-family: montserrat;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#hero-cta-email {
+  height: 50px;
+  width: 60%;
+}
+
+.hero-cta__form input {
+  width: 100%;
+  float: left;
+  border: none;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding-left: 15px;
+  font-size: 16px;
+  line-height: 18px;
+  height: 18px;
+  font-family: raleway;
+  font-weight: 400;
+  opacity: 1;
+  display: block;
+  margin-top: 10px;
+}
+
+.hero-cta__form input:focus {
+  outline: none;
+}
+
+.emailsignup {
+  font-family: montserrat;
+  font-size: 16px;
+  margin-left: 15px;
+  height: 50px;
+  width: 30%;
+  border: none;
+  background-color: #36cc8e;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+
+.trustlogos {
+  content: url("https://www.authenticireland.com/wp-content/uploads/2018/04/TopTrust1.png");
+  margin: 10px auto;
+  max-width: 100%;
+}
+
+.footer_trust_top {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.footer_trust_top p {
+  font-family: montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.footer-left {
+  padding-left: 0px;
+  justify-content: flex-start;
+}
+.footer-right {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer_main {
+  margin: 20px 0px 20px 0px;
+}
+
+.footer_copyright p {
+  font-size: 12px;
+  color: rgb(0, 0, 0, 0.5);
+  padding-top: 20px;
+}
+
+.footer__partners img {
+  float: right;
+  margin: 10px auto;
+  max-width: 100%;
+}
+
+.contactbg {
+  background-color: #374785;
+  margin-top: -50px;
+}
+
+.inputbg {
+  background-color: #a8d0e6;
+  color: #fff;
+}
+
+#contactcolor {
+  color: #fff;
+  font-size: 3rem;
+  /* margin-bottom: 2rem; */
+}
+
+#mail {
+  color: #fff;
+  border: 0;
+  border-radius: 2px;
+}
+
+::placeholder {
+  color: white;
+  padding: 15px;
+  margin-left: 15px;
+}
+
+.carousel {
+  border-radius: 10px 10px 10px 10px;
+  overflow: hidden;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+#socialh {
+  color: #fff;
+}
+
+.social {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.foot {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  font-size: 1.3rem;
+}
